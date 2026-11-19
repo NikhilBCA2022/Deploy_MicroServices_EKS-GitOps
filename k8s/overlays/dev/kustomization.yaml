@@ -1,0 +1,23 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+images:
+  - name: api-gateway
+    newName: 113903681860.dkr.ecr.ap-south-1.amazonaws.com/taskmanager/api-gateway
+    newTag: v1
+  - name: auth-service
+    newName: 113903681860.dkr.ecr.ap-south-1.amazonaws.com/taskmanager/auth-service
+    newTag: v1
+  - name: user-service
+    newName: 113903681860.dkr.ecr.ap-south-1.amazonaws.com/taskmanager/user-service
+    newTag: v1
+  - name: task-service
+    newName: 113903681860.dkr.ecr.ap-south-1.amazonaws.com/taskmanager/task-service
+    newTag: v1
+  - name: notification-service
+    newName: 113903681860.dkr.ecr.ap-south-1.amazonaws.com/taskmanager/notification-service
+    newTag: v1
+  - name: frontend
+    newName: 113903681860.dkr.ecr.ap-south-1.amazonaws.com/taskmanager/frontend
+    newTag: v1
