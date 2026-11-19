@@ -1,0 +1,9 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.8.4"
+  }
+}
